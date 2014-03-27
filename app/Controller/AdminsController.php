@@ -290,9 +290,10 @@
 				$data['NewArrival']['item_name'] = $this->request->data['item_name'];
 				$data['NewArrival']['quantity'] = $this->request->data['quantity'];
 				$data['NewArrival']['price'] = $this->request->data['price'];
-				$data['NewArrival']['type'] = ucfirst($this->request->data['type']);
+				$data['NewArrival']['item_code'] = ucfirst($this->request->data['item_code']);
+				$data['NewArrival']['shelf_life'] = ucfirst($this->request->data['shelf_life']);
+				$data['NewArrival']['unit'] = ucfirst($this->request->data['unit']);
 				if ($this->NewArrival->save($data)) {
-					$this->Session->setFlash(__('Data saved successfully.'));
 					$pid=$this->NewArrival->getlastInsertId();
 					$tab_name = 'NewArrival';
 					$data['EmployeeOrder']['employee_id'] = $this->Session->read('eid');
@@ -314,9 +315,7 @@
 					$data['DeliveryDetail']['quantity'] =  $this->request->data['quantity'];
 					$data['DeliveryDetail']['type'] = 'NewArrival';
 					$this->DeliveryDetail->save($data);
-					$this->Session->setFlash(__('Data Added Succesfully'));
-					$this->redirect(array('controller' => 'Admins','action' => 'add_image',$pid,$tab_name));	
-
+					$this->redirect(array('controller' => 'Admins','action' => 'add_image',$pid,$tab_name));
 				}
 			}
 		}
@@ -375,6 +374,7 @@
 													$data['New_arrival']['path'] = $filename1;
 													$filename1 = "'".$filename1."'";
 							                        if($this->$tab_name->updateAll(array('path'=>$filename1),array('item_id'=>$pid))){
+							                        	$this->Session->setFlash(__('Data Added Succesfully'));	
 							                        	$this->redirect(array('controller' => 'Admins','action' => 'admin'));
 							                        }
 			                        		}
@@ -406,8 +406,10 @@
 				$data[$tab_name]['unit']=$this->request->data['unit'];
 				$this->$tab_name->save($data);
 				$lastInsert = $this->$tab_name->getLastInsertId();
-				$this->redirect(array('controller'=>'Admins','action'=>'add_image',$lastInsert,$tab_name));
-				$this->Session->setFlash(__('Data Added Succesfully'));
+				if($this->$tab_name->save($data)) {
+					$this->redirect(array('controller'=>'Admins','action'=>'add_image',$lastInsert,$tab_name));
+				}
+				
 			}
 		}
 
