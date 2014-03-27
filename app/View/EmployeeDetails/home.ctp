@@ -1,4 +1,6 @@
+
 <div class="main_content">
+
 	<div class="inner_content">
 		<fieldset class='stockorder'>
 			<div class='subinner'>
