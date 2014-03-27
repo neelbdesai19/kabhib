@@ -7,8 +7,19 @@
 						if($this->Session->check('eid')):
 					?>
 					<form>
-						<button formaction="/kabhee B/ReturnItems/select_return" class="current">Damage Return</button>
-						<button formaction="/kabhee B/ReturnItems/fresh_return" class="current">Fresh Return</button>	
+						<button formaction="<?php echo $this->Html->url(array('controller' => 'ReturnItems', 
+														'action' => 'select_return')); ?>" class="current">
+
+								Damage Return
+						
+						</button>
+
+						<button formaction="<?php echo $this->Html->url(array('controller' => 'ReturnItems',
+														 'action' => 'fresh_return')); ?>" class="current">
+
+								Fresh Return
+
+						</button>	
 					</form>
 					<?php
     					endif;

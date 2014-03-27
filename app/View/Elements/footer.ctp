@@ -11,7 +11,8 @@
 		if($this->Session->check('eid') && $this->params['action']!='home'):	
 ?>
 			<form>
-				<button formaction="/kabhee B/EmployeeDetails/home" class="footer">HOME</button>
+				<button formaction="<?php echo $this->Html->url(array('controller' => 'EmployeeDetails', 'action' => 
+									'Home')); ?>" class="footer">HOME</button>
 		    </form>
 <?php
 		endif;
