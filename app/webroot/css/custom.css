@@ -1,0 +1,366 @@
+.login
+{
+	width: 600px;
+	height: 266px;
+	box-shadow: 3px 6px 22px;
+	border:2px grey dotted;
+	margin-left: 349px;
+	margin-top: 37px;
+}
+.head_content
+{
+	box-shadow: 3px 6px 22px;
+	height: 50px;
+}
+.inner_content
+{
+	width: 1349px;
+	height: 518px;
+	/*margin-left: 59px;*/
+	box-shadow: 3px 6px 22px;
+	margin-top: 17px;
+	overflow: hidden;
+}
+.subinner{
+	width: 1239px;
+	box-shadow: 3px 6px 22px;
+	overflow: auto ;
+	overflow-x : hidden;
+	border: 1px solid;
+	border-color: #ffcccc ;
+	height: 501px !important;
+	margin-left: 0px;
+	margin-top: 17px;
+	background-color: #FDF4F2;
+}
+.subinner1{
+	margin-top: 109px;
+	margin-left: 400px;
+}
+.subinner2{
+	margin-top: 139px;
+	margin-left: 380px;
+}
+.subinner div{
+	/*margin-left: 5px;*/
+}
+.subinner p{
+	/*margin-left: 5px;*/
+}
+.b1
+{
+	width:120px;
+	margin-left: 163px;
+	margin-top: -90px;
+	height: 80px;
+}
+.b2
+{
+	margin-top: -92px;
+	margin-left: 366px;
+	width: 160px;
+}
+.b3
+{
+	width: 145px;
+	margin-top: -91px;
+	margin-left: 539px;
+}
+.b4
+{
+	width:284px;
+	margin-top: -92px;
+	margin-left: 750px;
+}
+.b5
+{
+	width: 56px;
+	margin-left: 1069px;
+	margin-top: -60px;
+
+}
+#item{
+	margin-top: -3px;
+}
+.Oid{
+	width: 122px;
+}
+.Iid{
+	width: 225px;
+	margin-top: -35px;
+	margin-left: 113px;
+}
+.qty
+{
+	width: 122px;
+	margin-top: -33px;
+	margin-left: 337px;
+}
+.rqty
+{
+	width: 150px;
+}
+.required.rqtyinput
+{
+	width: 100px;
+}
+.required.rqtyinput.txtbox
+{
+	width: 200px;
+}
+.first{
+	width:103px;
+	margin-left: 7px;
+}
+.second
+{
+	width: 103px;
+	margin-top: -19px;
+	margin-left: 118px;
+}
+.third
+{
+	width: 103px;
+	margin-top: -19px;
+	margin-left: 237px;
+}
+.four
+{
+	width: 103px;
+	margin-top: -19px;
+	margin-left: 329px;
+}
+.five
+{
+	width: 103px;
+	margin-top: -19px;
+	margin-left: 462px;
+}
+.six
+{
+	width: 103px;
+	margin-top: -19px;
+	margin-left: 586px;
+}
+.menubtn
+{
+	height: 91px;
+	width: 600px;
+	margin-left: 12px; 
+	/*border: 1px solid;*/
+}
+.subitem
+{
+	width: 121px;
+	height: 63px;
+	margin-left: 16px;
+}
+.invoice
+{
+	border: 1px solid;
+	border-color: #ffcccc ;
+	margin-top: -466px !important;
+	margin-left: 605px;
+	margin-top: -370px;
+	margin-left: 824px;
+	background-color: #FFFFFF;
+	width: 404px;
+	height: 477px;
+}
+.invoice1{
+	width: 386px;
+	height: 478px;
+	border: 1px solid;
+	margin-top: -479px !important;
+	margin-left: 766px !important;
+	padding-top: 0px;
+	border: 1px solid;
+	border-color: #ffcccc ;
+	width: 455px;
+	background-color: #FFFFFF;
+	margin-left: 757px; 
+	overflow: auto !important;
+	overflow-x: hidden !important;
+	padding-left: 42px;
+}
+.invoice2 {
+    background-color: #FFFFFF;
+    border: 1px solid #FFCCCC;
+    margin-bottom: -1px;
+    margin-left: 15px; 
+    width: 477px; 
+    padding-left: 26px; 
+    padding-bottom: 3px;
+    padding-top: 12px;
+    height: 479px;
+    margin-top: 9px;
+}
+.indata table, tr, th{
+	border: 0px !important;
+	text-align: center;
+}
+.indata table, tr, td{
+	border: 0px !important;
+	text-align: center;
+}
+.indata{
+	overflow: auto !important; 
+	margin-top: -12px;
+	width: 402px; 
+	margin-left: 0px; 
+	/*height: 245px;*/
+	height: 191px;
+}
+.inp
+{
+	width: 216px !important ;
+	margin-top: -32px;
+	margin-left: 129px;
+}
+.selectbox
+{
+	width: 110px !important;
+	margin-top: -39px;
+	margin-left: 248px;
+}
+.price
+{
+	width: 74px;
+	margin-top: -62px;
+	margin-left: 381px;
+}
+.form_footer
+{
+	margin-left: 626px;
+	margin-top: 15px;
+	margin-top: -109px;
+	margin-left: 718px;
+}
+.noborder
+{
+	border: none;
+}
+.total_amt
+{
+	height: 97px;
+	width: 189px; 
+	margin-left: 1005px; 
+	margin-top: -85px;
+}
+.total_amt table, tr, th{
+	border: 0px !important;
+	text-align: center;
+}
+.total_amt table, tr, td{
+	border: 0px !important;
+	text-align: center;
+
+}
+.order-form{
+	width: 803px;
+	margin-left: 12px;
+	margin-top: -14px;
+	margin-left: -6px;
+	height: 399px;
+	overflow: auto;
+}
+.item{
+	width: 139px;
+	height: 125px !important;
+	margin-bottom: 14px;
+}
+.special-form{
+	height: 34px;
+}
+#grossamount{
+	margin-left: 298px; 
+	margin-top: -16px;
+	width: 87px;
+}
+#adv{
+	margin-left: 298px; 
+	margin-top: -16px; 
+	width: 87px;
+}
+#vat{
+	margin-left: 298px; 
+	margin-top: -16px; 
+	width: 87px;
+}
+#lftamt{
+	margin-left: 298px; 
+	margin-top: -16px; 
+	width: 87px;
+}
+#bill{
+	border-top: 1px solid;
+	margin-left: -8px;
+	margin-top: 123px;
+	width: 385px;
+}
+.billno{
+	width: 111px;
+	margin-top: 0px; 
+	margin-bottom: -21px;
+}	
+.cdate{
+	width: 111px;
+	margin-left: 263px; 
+	margin-top: 0px; 
+	margin-bottom: -21px;
+}
+#kg{
+	margin-left: 90px;
+}
+#amt{
+	margin-left:99px;
+}	
+.itmname{
+	width: 150px;
+}
+.weight{
+	width: 150px;
+	margin-left: 169px; 
+	margin-top: -18px;
+
+}
+.samount{
+	margin-top: -17px;
+	margin-left: 290px;
+	width: 150px;
+}
+
+.ddate{
+	margin-top: 40px; 
+	width: 200px;
+	margin-bottom: -50px;
+}
+.time{	
+	margin-top: 33px;
+	margin-left: 264px;
+	width: 111px;
+}
+.list1{
+	margin-top: 52px;
+	margin-bottom: 6px;	
+	margin-left: -6px; 
+	border-bottom: 1px dotted; 
+	width: 380px; 
+	height: 33px;
+}
+.menubtn {
+	width: 709px;
+}
+#EmployeeOrderDeliveryForm {
+	width: 1238px;
+}
+.btn-succes:hover {
+	color: black;
+}
+.total_amt {
+	margin-left: 825px;
+}
+.btn-success:hover
+{
+	color:#5F5D5E !important;
+}
