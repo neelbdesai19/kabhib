@@ -8,7 +8,7 @@
 			<input  type="text" value="<?php echo "1";  ?>" name="<?php echo $order_no.'quantity';  ?>" class="qty_size" />
 		</td>
 		<td id="<?php echo $order_no.'price';  ?>" class="order_amount">
-      			&nbsp&nbsp&nbsp&nbsp<input readonly type="text" value="<?php echo $price; ?>" id="<?php echo $order_no.'amount'; ?>"
+      			&nbsp;&nbsp;&nbsp;&nbsp;<input readonly type="text" value="<?php echo $price; ?>" id="<?php echo $order_no.'amount'; ?>"
             name="<?php echo $order_no.'price';  ?>" class="noborder om qty_size" />
 		</td>
 		<input type="hidden" value="<?php  echo $type; ?>" name="<?php echo $order_no.'type'?>" /> 
@@ -68,10 +68,20 @@ $('#totamt').html(totamt);
 
       $('tr button').on('click',function(){
             $(this).closest("tr").remove();
+            amt=$('#amt').html();
+            alert(amt);
+            tamt=0;
 
             total = 0;
+            if(amt==0)
+            {
+                  alert("hi");
+                 $('#totamt').html(tamt);  
+            }
+            else
+            {
             $('.order_amount').each(function(){
-                  
+                 
                  var value = $(this).find('input').val();
                  total += parseInt(value);
                  totamt=total+ parseInt(total*0.15);
@@ -79,6 +89,7 @@ $('#totamt').html(totamt);
               
               $('#amt').html(total);
               $('#totamt').html(totamt);
+            }
 
         }); 
 

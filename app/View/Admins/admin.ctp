@@ -15,7 +15,6 @@
 							<button formaction="/kabhee B/Admins/supply_demand" class="current">Supply / Demand Report
 							</button>
 							<button formaction="/kabhee B/Admins/damage_report" class="current">Damage Report</button>
-							<button formaction="/kabhee B/EmployeePersonals/payroll" class="current">Payroll</button>
 							<button formaction="/kabhee B/Admins/new_arrival" class="current">Add New Arrivals</button>
 							<button formaction="/kabhee B/Admins/existing" class="current">Add Existing Items</button>
 							<button formaction="/kabhee B/EmployeeDetails/logout" class="current">Logout</button>
