@@ -3,7 +3,7 @@
 	class EmployeeDetailsController extends AppController {
 
 		public $name = 'EmployeeDetails';
-		public $uses = array('EmployeeDetail','Cake','Bread','Khari','Pastry','NewArrival','Extra');
+		public $uses = array('EmployeeDetail','Cake','Bread','Khari','Pastry','NewArrival','Extra','Pudding');
 		public $components = array('Email', 'Cookie');
 		public $helpers= array('Html' , 'Form');
 
@@ -49,7 +49,7 @@
 		public function update_stock() {
 			if(!empty($this->request->data)) {
 				$type = $this->request->data['type'];
-				$count = (count($this->request->data)-1)/4;
+				$count = (count($this->request->data)-1)/5;
 				$diff = array();
 				$new_qty = array();
 				$stock = array();
@@ -59,6 +59,7 @@
 					$old = $this->request->data[$i.'old_qty'];
 					$diff[$i] = $old - $new[$i];
 					$stock[$i][$type]['item_id'] = $this->request->data[$i.'id'];
+					$stock[$i][$type]['item_code'] = $this->request->data[$i.'code'];
 					$stock[$i][$type]['item_name'] = $this->request->data[$i.'name'];
 					$stock[$i][$type]['quantity'] = $old;
 					$this->$type->id = $this->request->data[$i.'id'];
@@ -71,8 +72,8 @@
 				$this->set('flag','true');
 			} else {
 				$table_name = $this->request->params['pass']['0'];
-				$stock = $this->$table_name->find('all',array('fields'=>array($table_name.'.item_id',$table_name.'.item_name',
-											$table_name.'.quantity')));
+				$stock = $this->$table_name->find('all',array('fields'=>array($table_name.'.item_id',$table_name.'.item_code',
+													$table_name.'.item_name',$table_name.'.quantity')));
 				$this->set('stock',$stock);
 				$this->set('table_name',$table_name);
 				$this->set('flag','false');

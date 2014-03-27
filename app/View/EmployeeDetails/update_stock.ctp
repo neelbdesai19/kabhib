@@ -31,7 +31,7 @@
 	 							       		foreach ($value as $key1 => $value1) {
 		 								        echo "<tr>";
 		 								        echo "<td>";echo $i+1; echo "</td>";
-		 								        echo "<td width=''>".$value1['item_id']."</td>";
+		 								        echo "<td width=''>".$value1['item_code']."</td>";
 		 								        echo "<td width=''>".$value1['item_name']."</td>";
 		 								        echo "<td>KG</td>";
 		 								       	echo "<td width=''>".$value1['quantity']."</td>";
@@ -43,6 +43,8 @@
 		 												value="<?php echo $value1['quantity']; ?>" >
 		 										<input type="hidden" name="<?php echo $i.'name';?>"
 		 												value="<?php echo $value1['item_name']; ?>" >
+		 										<input type="hidden" name="<?php echo $i.'code';?>"
+		 												value="<?php echo $value1['item_code']; ?>" >
 		 										<td width=''>
 		 											<input type='text' name="<?php echo $i.'new_qty';?>"
 		 											style='width:50px;' class="required">
