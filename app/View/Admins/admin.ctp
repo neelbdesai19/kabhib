@@ -2,6 +2,7 @@
 	<div class="inner_content">
 		<fieldset class='stockorder'>
 			<div class='subinner'>
+				<?php echo $this->Session->flash(); ?>
 				<div class="hmediv">
 					<?php
 						if($this->Session->check('eid')):
