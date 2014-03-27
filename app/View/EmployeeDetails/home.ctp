@@ -7,13 +7,13 @@
 						if($this->Session->check('eid')):
 					?>
 					<form>
-							<button formaction="/kabhee B/EmployeeOrders/billtypes" class="current">Billing</button>
-							<button formaction="/kabhee B/EmployeeOrders/order" class="current">Order Stock</button>
-							<button formaction="/kabhee B/Deliveries/order_select" class="current">Delivery</button>
-							<button formaction="/kabhee B/ReturnItems/customer_return" class="current">Customer Return</button>
-							<button formaction="/kabhee B/ReturnItems/damage_return" class="current">Damage Return</button>
-							<button formaction="/kabhee B/EmployeeDetails/stock_check" class="current">Stock Check</button>
-							<button formaction="/kabhee B/EmployeeDetails/logout" class="current">Logout</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'EmployeeOrders', 'action' => 'billtypes')); ?>" class="current">Billing</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'EmployeeOrders', 'action' => 'order')); ?>" class="current">Order Stock</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'Deliveries', 'action' => 'order_select')); ?>" class="current">Delivery</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'ReturnItems', 'action' => 'customer_return')); ?>" class="current">Customer Return</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'ReturnItems', 'action' => 'damage_return')); ?>" class="current">Damage Return</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'EmployeeDetails', 'action' => 'stock_check')); ?>" class="current">Stock Check</button>
+							<button formaction="<?php echo $this->Html->url(array('controller' => 'EmployeeDetails', 'action' => 'logout')); ?>" class="current">Logout</button>
 					</form>
 					<?php
     					endif;
