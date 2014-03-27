@@ -401,6 +401,9 @@
 				$data[$tab_name]['quantity']=$this->request->data['quantity'];
 				$data[$tab_name]['price']=$this->request->data['price'];
 				$data[$tab_name]['path']='';
+				$data[$tab_name]['item_code']=$this->request->data['item_code'];
+				$data[$tab_name]['shelf_life']=$this->request->data['shelf_life'];
+				$data[$tab_name]['unit']=$this->request->data['unit'];
 				$this->$tab_name->save($data);
 				$lastInsert = $this->$tab_name->getLastInsertId();
 				$this->redirect(array('controller'=>'Admins','action'=>'add_image',$lastInsert,$tab_name));
