@@ -5,10 +5,14 @@
   });
 </script>
 <div class="main_content">
+
+
 <?php
 		echo "<div class='inner_content'>";
 ?>
 				<fieldset class='stockorder'>
+
+					
 					<div class='subinner'>
 						<div class="menubtn">
 							<button name="bread" value="Bread" class="order-item orderitem btn-primary brd" id="brd">Bread</button>
