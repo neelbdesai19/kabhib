@@ -2,8 +2,7 @@
   <div class="inner_content">
     <fieldset class='stockorder'>
       <div class='subinner'>
-        <form id="imageform" method="post" enctype="multipart/form-data" action='<?php echo $this->Html->url(array('controller' => 
-                  'Admins','action' => 'getimage',$pid,$tab_name)); ?>'>
+        <form id="imageform" method="post" enctype="multipart/form-data" action='<?php echo $this->Html->url(array('controller' => 'Admins','action' => 'getimage',$pid,$tab_name)); ?>'>
           <fieldset>
             <p>
               <label>Upload Your Image : </label>
