@@ -15,6 +15,21 @@
 		<label>Enter Price(Rs.):</label>
 			<?php echo $this->Form->input('weight',array('label' => false,'class' => 'form-control inp','id'=>'price','data-validation' => 'number', 'name'=> 'price')); ?>
 
+	</div>
+	<div class="special-form">
+		<label>Enter Item Code:</label>
+			<?php echo $this->Form->input('item_code',array('label' => false,'class' => 'form-control inp','id'=>'item_code','data-validation' => 'required', 'name'=> 'item_code')); ?>
+
+	</div>
+	<div class="special-form">
+		<label>Enter Self Life:</label>
+			<?php echo $this->Form->input('shelf_life',array('label' => false,'class' => 'form-control inp','id'=>'shelf_life','data-validation' => 'required', 'name'=> 'shelf_life')); ?>
+
+	</div>
+	<div class="special-form">
+		<label>Enter Unit:</label>
+			<?php echo $this->Form->input('unit',array('label' => false,'class' => 'form-control inp','id'=>'unit','data-validation' => 'required', 'name'=> 'unit')); ?>
+
 	</div>	
 	<input type="text" value="<?php echo $item_name; ?>"  id="item_name" name="item_type" style="display:none;"/>
  	<input class="btn btn-success reset submitbtn btn2" id="submit" value="Submit" style="margin-left: 317px;" 
